@@ -3,118 +3,87 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Eloy Aguilar | Senior Data Engineer</title>
 
 <style>
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
 body{
     font-family: Arial, sans-serif;
-    background:#f5f7fa;
-    height:100vh;
-    overflow:hidden;
-    padding:20px;
+    max-width:900px;
+    margin:auto;
+    padding:40px;
+    color:#333;
+    line-height:1.6;
+    background-color:#f8f9fa;
 }
 
-.container{
-    display:grid;
-    grid-template-columns:320px 1fr;
-    gap:20px;
-    height:calc(100vh - 40px);
-}
-
-.left-panel{
-    background:white;
-    border-radius:15px;
-    padding:20px;
+header{
     text-align:center;
-    box-shadow:0 2px 10px rgba(0,0,0,.08);
-}
-
-.right-panel{
-    background:white;
-    border-radius:15px;
-    padding:20px;
-    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    margin-bottom:40px;
 }
 
 .profile-pic{
-    width:140px;
-    height:140px;
+    width:180px;
+    height:180px;
     object-fit:cover;
     border-radius:50%;
     border:4px solid #0078D4;
-    margin-bottom:15px;
+    margin-bottom:20px;
 }
 
 h1{
     color:#0078D4;
-    font-size:28px;
     margin-bottom:5px;
 }
 
 h2{
     color:#0078D4;
-    font-size:18px;
-    margin-bottom:10px;
+    border-bottom:2px solid #0078D4;
+    padding-bottom:5px;
 }
 
-h3{
-    margin-bottom:10px;
-    color:#555;
-}
-
-p{
-    font-size:14px;
-    line-height:1.5;
-}
-
-.summary{
-    margin-top:15px;
-    margin-bottom:15px;
+section{
+    background:white;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
 }
 
 .skills{
     display:flex;
     flex-wrap:wrap;
-    justify-content:center;
-    gap:8px;
-    margin-top:15px;
+    gap:10px;
 }
 
 .skill{
     background:#0078D4;
     color:white;
-    padding:6px 10px;
+    padding:8px 12px;
     border-radius:20px;
-    font-size:12px;
+    font-size:14px;
 }
 
-.grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:15px;
+.job{
+    margin-bottom:25px;
 }
 
-.card{
-    background:#f8f9fa;
-    padding:15px;
-    border-radius:10px;
+.download{
+    text-align:center;
+    margin-top:30px;
 }
 
-.card ul{
-    padding-left:18px;
+.button{
+    background:#0078D4;
+    color:white;
+    text-decoration:none;
+    padding:12px 24px;
+    border-radius:5px;
+    display:inline-block;
 }
 
-.card li{
-    font-size:13px;
-    margin-bottom:6px;
+.button:hover{
+    background:#005fa3;
 }
 
 a{
@@ -122,25 +91,8 @@ a{
     text-decoration:none;
 }
 
-.button{
-    display:inline-block;
-    margin-top:20px;
-    background:#0078D4;
-    color:white;
-    padding:12px 22px;
-    border-radius:8px;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-.button:hover{
-    background:#005ea3;
-}
-
-.footer{
-    margin-top:20px;
-    font-size:12px;
-    color:#666;
+a:hover{
+    text-decoration:underline;
 }
 
 </style>
@@ -148,136 +100,140 @@ a{
 
 <body>
 
-<div class="container">
+<header>
 
-    <!-- LEFT PANEL -->
+    <img
+        src="CV foto.png"
+        alt="Eloy Aguilar"
+        class="profile-pic"
+    >
 
-    <div class="left-panel">
+    <h1>Eloy Aguilar</h1>
+    <h3>Senior Data Engineer</h3>
 
-        CV foto.png
-
-        <h1>Eloy Aguilar</h1>
-
-        <h3>Senior Data Engineer</h3>
-
-        <p>Monterrey, Nuevo León, México</p>
-
+    <p>
+        Monterrey, Nuevo León, México
         <br>
-
         <a href="https://www.linkedin.com/in/eloy-aguilar-04278b283/" target="_blank">
             LinkedIn Profile
         </a>
+    </p>
 
-        <p class="summary">
-            Senior Data Engineer specialized in Microsoft Fabric,
-            Azure, Python, SQL, Data Governance, ETL modernization,
-            and enterprise-scale analytics platforms.
-        </p>
+</header>
 
-        <div class="skills">
-            <span class="skill">Microsoft Fabric</span>
-            <span class="skill">Azure</span>
-            <span class="skill">Python</span>
-            <span class="skill">SQL</span>
-            <span class="skill">Power BI</span>
-            <span class="skill">ADF</span>
-            <span class="skill">Lakehouse</span>
-            <span class="skill">Governance</span>
-        </div>
+<section>
 
-        Eloy_Aguilar_CV.pdf
-            Download CV
-        </a>
+    <h2>Professional Summary</h2>
 
-        <div class="footer">
-            Microsoft Fabric • Azure • Data Engineering
-        </div>
+    <p>
+        Senior Data Engineer with 3+ years of experience designing,
+        modernizing, and operating enterprise-scale data platforms on
+        Microsoft Azure and Microsoft Fabric.
+    </p>
 
-    </div>
+    <p>
+        Specialized in data architecture, governance, ETL modernization,
+        Python development,enterprise analytics,
+        and data platform transformation.
+    </p>
 
-    <!-- RIGHT PANEL -->
+</section>
 
-    <div class="right-panel">
+<section>
 
-        <div class="grid">
+    <h2>Experience</h2>
 
-            <div class="card">
-                <h2>Current Role</h2>
+    <div class="job">
 
-                <ul>
-                    <li>Data Engineer at Daltum Systems</li>
-                    <li>ADF to Fabric Migration</li>
-                    <li>Master Orchestration Pipelines</li>
-                    <li>Lakehouse Administration</li>
-                    <li>Platform Governance</li>
-                </ul>
-            </div>
+        <h3>Data Engineer — Daltum Systems</h3>
 
-            <div class="card">
-                <h2>Projects</h2>
+        <p><strong>Jun 2025 - Present</strong></p>
 
-                <ul>
-                    <li>Medallion Architecture</li>
-                    <li>Enterprise Data Platform</li>
-                    <li>Microsoft API Integrations</li>
-                    <li>Fabric Data Lake Solutions</li>
-                    <li>Metadata Automation Tools</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h2>Experience</h2>
-
-                <ul>
-                    <li>Daltum Systems</li>
-                    <li>Celestica</li>
-                    <li>Global Business Technologies</li>
-                    <li>Database Administration</li>
-                    <li>Cloud Analytics</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h2>Technical Expertise</h2>
-
-                <ul>
-                    <li>Microsoft Fabric</li>
-                    <li>Azure Services</li>
-                    <li>Python Development</li>
-                    <li>SQL Optimization</li>
-                    <li>Power BI Reporting</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h2>Architecture</h2>
-
-                <ul>
-                    <li>Bronze / Silver / Gold Layers</li>
-                    <li>Lakehouse Design</li>
-                    <li>Warehouse Solutions</li>
-                    <li>Data Modeling</li>
-                    <li>Security & Access Control</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h2>Highlights</h2>
-
-                <ul>
-                    <li>Fabric Technical Lead</li>
-                    <li>Python SME</li>
-                    <li>API Integrations</li>
-                    <li>ETL/ELT Development</li>
-                    <li>Enterprise Governance</li>
-                </ul>
-            </div>
-
-        </div>
+        <ul>
+            <li>Migrating Azure Data Factory pipelines to Microsoft Fabric.</li>
+            <li>Developing Python notebooks and orchestration pipelines.</li>
+            <li>Implementing Medallion Architecture (Bronze, Silver, Gold).</li>
+            <li>Building Lakehouses and governance standards.</li>
+            <li>Leading platform architecture and modernization initiatives.</li>
+            <li>API integrations to Fabric.</li>
+            <li>Data lake, Lakehouse and warehouse creation and management.</li>
+            
+        </ul>
 
     </div>
 
-</div>
+    <div class="job">
+
+        <h3>Data Analyst — Celestica</h3>
+
+        <p><strong>Nov 2024 - Jul 2025</strong></p>
+
+        <ul>
+            <li>Database administration and maintenance.</li>
+            <li>SQL development and optimization.</li>
+            <li>JavaScript development.</li>
+            <li>Data analysis and reporting support.</li>
+        </ul>
+
+    </div>
+
+    <div class="job">
+
+        <h3>Help Desk Lead — Global Business Technologies</h3>
+
+        <p><strong>Apr 2023 - Apr 2024</strong></p>
+
+        <ul>
+            <li>Database migrations and backups.</li>
+            <li>Network and VPN administration.</li>
+            <li>Hypervisor and virtual server maintenance.</li>
+            <li>Google Workspace administration.</li>
+            <li>Infrastructure and hardware troubleshooting.</li>
+        </ul>
+
+    </div>
+
+</section>
+
+<section>
+
+    <h2>Featured Projects</h2>
+
+    <ul>
+        <li>Microsoft Fabric Medallion Architecture Implementation</li>
+        <li>Azure Data Factory to Microsoft Fabric Migration</li>
+        <li>Enterprise Master Orchestration Pipeline</li>
+        <li>Microsoft APIs and external API integrations</li>
+    </ul>
+
+</section>
+
+<section>
+
+    <h2>Technical Skills</h2>
+
+    <div class="skills">
+        <span class="skill">Microsoft Fabric</span>
+        <span class="skill">Azure</span>
+        <span class="skill">Python</span>
+        <span class="skill">SQL</span>
+        <span class="skill">Power BI</span>
+        <span class="skill">Azure Data Factory</span>
+        <span class="skill">Lakehouse</span>
+        <span class="skill">Data Governance</span>
+        <span class="skill">AI Solutions</span>
+        <span class="skill">Microsoft APIs</span>
+        <span class="skill">Data Modeling</span>
+        <span class="skill">ETL / ELT</span>
+    </div>
+
+</section>
+
+<section class="download">
+    <a href="Eloy_Aguilar_CV.pdf" class="button" target="_blank">
+        Download CV PDF
+    </a>
+</section>
 
 </body>
 </html>
