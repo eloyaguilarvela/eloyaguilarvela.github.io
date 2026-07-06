@@ -6,6 +6,7 @@
 <title>Eloy Aguilar | Senior Data Engineer</title>
 
 <style>
+
 body{
     font-family: Arial, sans-serif;
     max-width:900px;
@@ -13,16 +14,21 @@ body{
     padding:40px;
     color:#333;
     line-height:1.6;
+    background-color:#f8f9fa;
 }
 
 header{
-    <img
-    src="profile.jpg"
-    alt="Eloy Aguilar"
-    width="180"
-    style="border-radius:50%; margin-bottom:
     text-align:center;
     margin-bottom:40px;
+}
+
+.profile-pic{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+    border-radius:50%;
+    border:4px solid #0078D4;
+    margin-bottom:20px;
 }
 
 h1{
@@ -36,6 +42,14 @@ h2{
     padding-bottom:5px;
 }
 
+section{
+    background:white;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
 .skills{
     display:flex;
     flex-wrap:wrap;
@@ -47,6 +61,7 @@ h2{
     color:white;
     padding:8px 12px;
     border-radius:20px;
+    font-size:14px;
 }
 
 .job{
@@ -62,27 +77,52 @@ h2{
     background:#0078D4;
     color:white;
     text-decoration:none;
-    padding:12px 20px;
+    padding:12px 24px;
     border-radius:5px;
+    display:inline-block;
 }
+
+.button:hover{
+    background:#005fa3;
+}
+
+a{
+    color:#0078D4;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
 </style>
 </head>
 
 <body>
 
 <header>
+
+    <img
+        src="profile.jpg"
+        alt="Eloy Aguilar"
+        class="profile-pic"
+    >
+
     <h1>Eloy Aguilar</h1>
     <h3>Senior Data Engineer</h3>
 
     <p>
-        Monterrey, Nuevo León, México<br>
-        https://www.linkedin.com/in/eloy-aguilar-04278b283/
+        Monterrey, Nuevo León, México
+        <br>
+        <a href="https://www.linkedin.com/in/eloy-aguilar-04278b283/" target="_blank">
             LinkedIn Profile
         </a>
     </p>
+
 </header>
 
 <section>
+
     <h2>Professional Summary</h2>
 
     <p>
@@ -93,52 +133,82 @@ h2{
 
     <p>
         Specialized in data architecture, governance, ETL modernization,
-        Python development, AI-driven solutions, and enterprise analytics.
+        Python development, AI-driven solutions, enterprise analytics,
+        and data platform transformation.
     </p>
+
 </section>
 
 <section>
+
     <h2>Experience</h2>
 
     <div class="job">
+
         <h3>Data Engineer — Daltum Systems</h3>
+
         <p><strong>Jun 2025 - Present</strong></p>
 
         <ul>
             <li>Migrating Azure Data Factory pipelines to Microsoft Fabric.</li>
             <li>Developing Python notebooks and orchestration pipelines.</li>
             <li>Implementing Medallion Architecture (Bronze, Silver, Gold).</li>
+            <li>Building Lakehouses and governance standards.</li>
             <li>Creating AI-powered solutions integrated with Microsoft Teams.</li>
-            <li>Leading governance and architecture initiatives.</li>
+            <li>Leading platform architecture and modernization initiatives.</li>
         </ul>
+
     </div>
 
     <div class="job">
+
         <h3>Data Analyst — Celestica</h3>
+
         <p><strong>Nov 2024 - Jul 2025</strong></p>
 
         <ul>
             <li>Database administration and maintenance.</li>
             <li>SQL development and optimization.</li>
+            <li>JavaScript development.</li>
             <li>Data analysis and reporting support.</li>
         </ul>
+
     </div>
 
     <div class="job">
+
         <h3>Help Desk Lead — Global Business Technologies</h3>
+
         <p><strong>Apr 2023 - Apr 2024</strong></p>
 
         <ul>
             <li>Database migrations and backups.</li>
             <li>Network and VPN administration.</li>
-            <li>Virtual server maintenance.</li>
+            <li>Hypervisor and virtual server maintenance.</li>
             <li>Google Workspace administration.</li>
+            <li>Infrastructure and hardware troubleshooting.</li>
         </ul>
+
     </div>
 
 </section>
 
 <section>
+
+    <h2>Featured Projects</h2>
+
+    <ul>
+        <li>Microsoft Fabric Medallion Architecture Implementation</li>
+        <li>Azure Data Factory to Microsoft Fabric Migration</li>
+        <li>Enterprise Master Orchestration Pipeline</li>
+        <li>AI Agent Integrated with Microsoft Teams</li>
+        <li>Metadata Inventory Tool using Microsoft APIs</li>
+    </ul>
+
+</section>
+
+<section>
+
     <h2>Technical Skills</h2>
 
     <div class="skills">
@@ -148,17 +218,22 @@ h2{
         <span class="skill">SQL</span>
         <span class="skill">Power BI</span>
         <span class="skill">Azure Data Factory</span>
-        <span class="skill">Data Governance</span>
         <span class="skill">Lakehouse</span>
+        <span class="skill">Data Governance</span>
         <span class="skill">AI Solutions</span>
         <span class="skill">Microsoft APIs</span>
+        <span class="skill">Data Modeling</span>
+        <span class="skill">ETL / ELT</span>
     </div>
+
 </section>
 
 <section class="download">
+
     Eloy_Aguilar_CV.pdf
         Download CV PDF
     </a>
+
 </section>
 
 </body>
