@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,94 +8,117 @@
 
 <style>
 
-body{
+* {
+    box-sizing: border-box;
+}
+
+body {
     font-family: Arial, sans-serif;
-    max-width:900px;
-    margin:auto;
-    padding:40px;
-    color:#333;
-    line-height:1.6;
-    background-color:#f8f9fa;
+    max-width: 900px;
+    margin: auto;
+    padding: 40px;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f8f9fa;
 }
 
-header{
-    text-align:center;
-    margin-bottom:40px;
+header {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-.profile-pic{
-    width:120px;
-    height:120px;
-    object-fit:cover;
-    border-radius:50%;
-    border:4px solid #0078D4;
-    display:block;
-    margin:0 auto 20px auto;
-    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+/* Foto de perfil circular */
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    max-width: 120px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 4px solid #0078D4;
+    display: block;
+    margin: 0 auto 20px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-h1{
-    color:#0078D4;
-    margin-bottom:5px;
+h1 {
+    color: #0078D4;
+    margin-bottom: 5px;
 }
 
-h2{
-    color:#0078D4;
-    border-bottom:2px solid #0078D4;
-    padding-bottom:5px;
+h2 {
+    color: #0078D4;
+    border-bottom: 2px solid #0078D4;
+    padding-bottom: 5px;
 }
 
-section{
-    background:white;
-    padding:20px;
-    margin-bottom:20px;
-    border-radius:10px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-.skills{
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-.skill{
-    background:#0078D4;
-    color:white;
-    padding:8px 12px;
-    border-radius:20px;
-    font-size:14px;
+.skill {
+    background: #0078D4;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 14px;
 }
 
-.job{
-    margin-bottom:25px;
+.job {
+    margin-bottom: 25px;
 }
 
-.download{
-    text-align:center;
-    margin-top:30px;
+.download {
+    text-align: center;
+    margin-top: 30px;
 }
 
-.button{
-    background:#0078D4;
-    color:white;
-    text-decoration:none;
-    padding:12px 24px;
-    border-radius:5px;
-    display:inline-block;
+.button {
+    background: #0078D4;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    display: inline-block;
 }
 
-.button:hover{
-    background:#005fa3;
+.button:hover {
+    background: #005fa3;
 }
 
-a{
-    color:#0078D4;
-    text-decoration:none;
+a {
+    color: #0078D4;
+    text-decoration: none;
 }
 
-a:hover{
-    text-decoration:underline;
+a:hover {
+    text-decoration: underline;
+}
+
+/* Adaptación para dispositivos móviles */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
 }
 
 </style>
@@ -107,7 +131,13 @@ a:hover{
     <img
         src="CV foto.png"
         alt="Eloy Aguilar"
-        classgineer
+        class="profile-pic"
+    >
+
+    <h1>Eloy Aguilar</h1>
+
+    <h3>
+        Senior Data Engineer
         <br>
         Azure | Fabric | Databricks | Snowflake | AI Data Solutions
     </h3>
@@ -115,16 +145,18 @@ a:hover{
     <p>
         Monterrey, Nuevo León, México
         <br>
-
-        <a href="https://www.linkedin.com/in/eloy-aguilar-04278b283/" target="_blank">
+        <a
+            href="https://www.linkedin.com/in/eloy-aguilar-04278b283/"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
             LinkedIn Profile
         </a>
-
     </p>
 
 </header>
-<section>
 
+<section>
     <h2>Professional Summary</h2>
 
     <p>
@@ -139,17 +171,13 @@ a:hover{
         cloud platform administration, cloud infrastructure management,
         and data platform modernization.
     </p>
-
 </section>
 
 <section>
-
     <h2>Experience</h2>
 
     <div class="job">
-
         <h3>Senior Data Engineer — Femsa Servicios</h3>
-
         <p><strong>Jul 2026 - Oct 2026</strong></p>
 
         <ul>
@@ -162,13 +190,10 @@ a:hover{
             <li>Administered Azure Storage and container-based data environments.</li>
             <li>Extracted, transformed, and prepared data to support AI agents and intelligent automation solutions.</li>
         </ul>
-
     </div>
 
     <div class="job">
-
         <h3>Senior Data Engineer — Daltum Systems</h3>
-
         <p><strong>Jun 2025 - Jul 2026</strong></p>
 
         <ul>
@@ -180,13 +205,10 @@ a:hover{
             <li>API integrations to Fabric.</li>
             <li>Data lake, Lakehouse and warehouse creation and management.</li>
         </ul>
-
     </div>
 
     <div class="job">
-
         <h3>Data Engineer — Celestica</h3>
-
         <p><strong>Nov 2024 - Jul 2025</strong></p>
 
         <ul>
@@ -196,13 +218,10 @@ a:hover{
             <li>JavaScript development.</li>
             <li>Data analysis and reporting support.</li>
         </ul>
-
     </div>
 
     <div class="job">
-
         <h3>Help Desk Lead — Global Business Technologies</h3>
-
         <p><strong>Apr 2023 - Apr 2024</strong></p>
 
         <ul>
@@ -212,13 +231,10 @@ a:hover{
             <li>Google Workspace administration.</li>
             <li>Infrastructure and hardware troubleshooting.</li>
         </ul>
-
     </div>
-
 </section>
 
 <section>
-
     <h2>Featured Projects</h2>
 
     <ul>
@@ -227,15 +243,12 @@ a:hover{
         <li>Enterprise Master Orchestration Pipeline</li>
         <li>Microsoft APIs and External API Integrations</li>
     </ul>
-
 </section>
 
 <section>
-
     <h2>Technical Skills</h2>
 
     <div class="skills">
-
         <span class="skill">Microsoft Fabric</span>
         <span class="skill">Azure</span>
         <span class="skill">Azure Data Factory</span>
@@ -258,16 +271,15 @@ a:hover{
         <span class="skill">Container Management</span>
         <span class="skill">Cloud Administration</span>
         <span class="skill">Microsoft APIs</span>
-
     </div>
-
 </section>
 
 <section class="download">
-    <a href="EloyAguilarCV.pdf" class="button" target="_blank">
+    <a href="EloyAguilarCV.pdf" class="button" target="_blank" rel="noopener noreferrer">
         Download CV PDF
     </a>
 </section>
 
 </body>
 </html>
+```
